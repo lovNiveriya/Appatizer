@@ -19,6 +19,9 @@
 		9C883F1E2AF417D90055A89F /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C883F1D2AF417D90055A89F /* AccountView.swift */; };
 		9C883F222AF6BF6F0055A89F /* AppatizersListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C883F212AF6BF6F0055A89F /* AppatizersListModel.swift */; };
 		9C883F252AF6C6900055A89F /* AppatizerListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C883F242AF6C6900055A89F /* AppatizerListCellView.swift */; };
+		9C883F272AF6C8F70055A89F /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C883F262AF6C8F70055A89F /* APError.swift */; };
+		9C883F292AF6C9050055A89F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C883F282AF6C9050055A89F /* NetworkManager.swift */; };
+		9C883F2D2AF78F230055A89F /* AppatizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C883F2C2AF78F230055A89F /* AppatizerListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		9C883F1D2AF417D90055A89F /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		9C883F212AF6BF6F0055A89F /* AppatizersListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppatizersListModel.swift; sourceTree = "<group>"; };
 		9C883F242AF6C6900055A89F /* AppatizerListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppatizerListCellView.swift; sourceTree = "<group>"; };
+		9C883F262AF6C8F70055A89F /* APError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
+		9C883F282AF6C9050055A89F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		9C883F2C2AF78F230055A89F /* AppatizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppatizerListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +110,10 @@
 		9C883EEE2AF414B80055A89F /* Appetizers */ = {
 			isa = PBXGroup;
 			children = (
+				9C883F2B2AF78F080055A89F /* Utility */,
 				9C883F202AF4C0C60055A89F /* Model */,
 				9C883F1F2AF4197D0055A89F /* Views */,
 				9C883EEF2AF414B80055A89F /* AppetizersApp.swift */,
-				9C883EF12AF414B80055A89F /* AppatizerTabView.swift */,
 				9C883EF32AF414BA0055A89F /* Assets.xcassets */,
 				9C883EF52AF414BA0055A89F /* Preview Content */,
 			);
@@ -142,10 +148,9 @@
 		9C883F1F2AF4197D0055A89F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9C883EF12AF414B80055A89F /* AppatizerTabView.swift */,
+				9C883F2A2AF78EDB0055A89F /* Screens */,
 				9C883F232AF6C6800055A89F /* AppatizerCellView */,
-				9C883F1D2AF417D90055A89F /* AccountView.swift */,
-				9C883F1B2AF417CC0055A89F /* OrderView.swift */,
-				9C883F192AF417B80055A89F /* AppitizerListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +169,26 @@
 				9C883F242AF6C6900055A89F /* AppatizerListCellView.swift */,
 			);
 			path = AppatizerCellView;
+			sourceTree = "<group>";
+		};
+		9C883F2A2AF78EDB0055A89F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				9C883F1B2AF417CC0055A89F /* OrderView.swift */,
+				9C883F1D2AF417D90055A89F /* AccountView.swift */,
+				9C883F192AF417B80055A89F /* AppitizerListView.swift */,
+				9C883F2C2AF78F230055A89F /* AppatizerListViewModel.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		9C883F2B2AF78F080055A89F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9C883F262AF6C8F70055A89F /* APError.swift */,
+				9C883F282AF6C9050055A89F /* NetworkManager.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,9 +321,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C883F292AF6C9050055A89F /* NetworkManager.swift in Sources */,
 				9C883EF22AF414B80055A89F /* AppatizerTabView.swift in Sources */,
 				9C883F1C2AF417CC0055A89F /* OrderView.swift in Sources */,
+				9C883F2D2AF78F230055A89F /* AppatizerListViewModel.swift in Sources */,
 				9C883F252AF6C6900055A89F /* AppatizerListCellView.swift in Sources */,
+				9C883F272AF6C8F70055A89F /* APError.swift in Sources */,
 				9C883EF02AF414B80055A89F /* AppetizersApp.swift in Sources */,
 				9C883F1A2AF417B80055A89F /* AppitizerListView.swift in Sources */,
 				9C883F222AF6BF6F0055A89F /* AppatizersListModel.swift in Sources */,

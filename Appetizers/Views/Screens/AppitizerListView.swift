@@ -8,15 +8,21 @@
 import SwiftUI
 
 struct AppitizerListView: View {
+    
+    @StateObject private var viewModel = AppatizerListViewModel()
+    
     var body: some View {
         NavigationView{
-            List(MockData.appetizers, id: \.id) { appatizer in
+            List(viewModel.appatizerList) { appatizer in
                 HStack{
                 AppatizerListCellView(appatizer: appatizer)
                 }.navigationTitle("🍟 Apptizers")
             }
+        }.onAppear{
+            viewModel.getListData()
         }
     }
+
 }
 
 #Preview {

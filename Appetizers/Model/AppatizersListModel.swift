@@ -11,7 +11,7 @@ struct AppatizersListModel: Codable{
     let request: [AppatizersRequestModel]
 }
 
-struct AppatizersRequestModel: Codable{
+struct AppatizersRequestModel: Codable,Identifiable{
     let id: Int
     let name: String
     let description: String

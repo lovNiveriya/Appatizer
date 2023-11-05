@@ -19,7 +19,7 @@ struct AppatizerListCellView: View {
             Text(appatizer.name)
                 .font(.title2)
                 .fontWeight(.medium)
-                .foregroundStyle(Color.black)
+                .foregroundStyle(.black)
             Text("$\(appatizer.price, specifier: "%.2f")")
                 .fontWeight(.semibold)
                 .foregroundStyle(Color.secondary)
