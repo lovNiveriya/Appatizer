@@ -22,6 +22,7 @@
 		9C883F272AF6C8F70055A89F /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C883F262AF6C8F70055A89F /* APError.swift */; };
 		9C883F292AF6C9050055A89F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C883F282AF6C9050055A89F /* NetworkManager.swift */; };
 		9C883F2D2AF78F230055A89F /* AppatizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C883F2C2AF78F230055A89F /* AppatizerListViewModel.swift */; };
+		9C883F2F2AF801B60055A89F /* RemoteListViewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C883F2E2AF801B60055A89F /* RemoteListViewImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		9C883F262AF6C8F70055A89F /* APError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 		9C883F282AF6C9050055A89F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		9C883F2C2AF78F230055A89F /* AppatizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppatizerListViewModel.swift; sourceTree = "<group>"; };
+		9C883F2E2AF801B60055A89F /* RemoteListViewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteListViewImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 			children = (
 				9C883F262AF6C8F70055A89F /* APError.swift */,
 				9C883F282AF6C9050055A89F /* NetworkManager.swift */,
+				9C883F2E2AF801B60055A89F /* RemoteListViewImage.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C883F292AF6C9050055A89F /* NetworkManager.swift in Sources */,
+				9C883F2F2AF801B60055A89F /* RemoteListViewImage.swift in Sources */,
 				9C883EF22AF414B80055A89F /* AppatizerTabView.swift in Sources */,
 				9C883F1C2AF417CC0055A89F /* OrderView.swift in Sources */,
 				9C883F2D2AF78F230055A89F /* AppatizerListViewModel.swift in Sources */,

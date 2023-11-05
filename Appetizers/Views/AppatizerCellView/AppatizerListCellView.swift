@@ -10,10 +10,23 @@ import SwiftUI
 struct AppatizerListCellView: View {
     let appatizer: AppatizersRequestModel
     var body: some View {
-        Image(.asianFlankSteak)
-            .resizable()
-            .frame(width: 100, height: 80)
-            .clipShape(RoundedRectangle(cornerRadius: 8))
+        
+        AppetizerRemoteImage(urlString: appatizer.imageURL)
+            .frame(width: 120, height: 90)
+        
+//        AsyncImage(url: URL(string: appatizer.imageURL)) { image in
+//            image
+//                .resizable()
+//                .aspectRatio(contentMode: .fit)
+//                .frame(width: 120, height: 90)
+//                .cornerRadius(8)
+//        } placeholder: {
+//            Image("food-placeholder")
+//                .resizable()
+//                .aspectRatio(contentMode: .fit)
+//                .frame(width: 120, height: 90)
+//                .cornerRadius(8)
+//        }
         
         VStack(alignment: .leading,spacing: 8){
             Text(appatizer.name)

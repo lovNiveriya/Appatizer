@@ -12,15 +12,30 @@ struct AppitizerListView: View {
     @StateObject private var viewModel = AppatizerListViewModel()
     
     var body: some View {
-        NavigationView{
-            List(viewModel.appatizerList) { appatizer in
-                HStack{
-                AppatizerListCellView(appatizer: appatizer)
-                }.navigationTitle("🍟 Apptizers")
+        ZStack{
+            NavigationView{
+                List(viewModel.appatizerList) { appatizer in
+                    HStack{
+                        AppatizerListCellView(appatizer: appatizer)
+                    }.navigationTitle("🍟 Apptizers")
+                }
             }
         }.onAppear{
             viewModel.getListData()
         }
+        
+        if viewModel.isLoading {
+            VStack{
+                ProgressView(label: {
+                    Text("Loading List")
+                        .foregroundStyle(.primary)
+                })
+                .tint(.appPrimary)
+                .progressViewStyle(.circular)
+                Spacer()
+            }.padding()
+        }
+        
     }
 
 }
